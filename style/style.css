@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    height: 100vh;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:hsl(0, 0%, 15%) ;
+    border-radius: 20px;
+}
+.calculator .screen-calculator{
+    margin-bottom: 10px;
+    height: 80px;
+    background-color: hsl(0, 0%, 30%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.calculator .screen-calculator input{
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    height: 100%;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    z-index: 111;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.calculator .button-calculator{
+    padding: 10px;
+}
+.calculator .button-calculator div{
+    margin: 10px 0;
+    display: flex;
+
+    justify-content: space-between;
+
+}
+.calculator .button-calculator input[type=button]{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: hsl(0, 0%, 30%);
+    border-radius: 50%;
+    color: white;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.calculator .button-calculator input[type=button]:hover{
+    background-color: hsl(0, 0%, 40%);
+
+}
+.calculator .button-calculator div:nth-child(1) input[type=button]{
+    background-color: hsl(35, 100%, 55%);
+}
+.calculator .button-calculator div:nth-child(1) input[type=button]:hover,.calculator .button-calculator div input[type=button]:last-child:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.calculator .button-calculator div input[type=button]:last-child{
+    background-color: hsl(35, 100%, 55%);
+}
+.calculator .button-calculator div:last-child{
+    display: flex;
+}
+.calculator .button-calculator div input[type=button].special{
+    flex-grow: 10;
+    border-radius: 40px;
+}

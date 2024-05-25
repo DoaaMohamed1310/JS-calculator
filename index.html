@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>calculator</title>
+        <!-- file css -->
+        <link rel="stylesheet" href="style/style.css">
+        <!-- render element normaly -->
+        <link rel="stylesheet" href="style/normalize.css">
+        <!-- font awesome libaray -->
+        <link rel="stylesheet" href="style/all.min.css">
+        <!-- line icon -->
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="screen-calculator">
+                <input type="text" name="screen" id="screen" onkeydown="return false">
+            </div>
+            <div class="button-calculator">
+                <div>
+                    <input type="button" value="AC" class="clear">
+                    <input type="button" value="DC" class="clearNumByNum">
+                    <input type="button" value="+/-" class="postive-negative">
+                    <input type="button" value="/" class="btn">
+                </div>
+                <div>
+                    <input type="button" value="7" class="btn">
+                    <input type="button" value="8" class="btn">
+                    <input type="button" value="9" class="btn">
+                    <input type="button" value="*" class="btn">
+                </div>
+                <div>
+                    <input type="button" value="4" class="btn">
+                    <input type="button" value="5" class="btn">
+                    <input type="button" value="6" class="btn">
+                    <input type="button" value="-" class="btn">
+                </div>
+                <div>
+                    <input type="button" value="1" class="btn">
+                    <input type="button" value="2" class="btn">
+                    <input type="button" value="3" class="btn">
+                    <input type="button" value="+" class="btn">
+                </div>
+                <div>
+                    <input type="button" value="0" class="special btn">
+                    <input type="button" value="." class="btn">
+                    <input type="button" value="=" class="result">
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>
